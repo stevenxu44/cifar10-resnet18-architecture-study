@@ -1,0 +1,234 @@
+{
+  "dataset": "CIFAR-10.1 v6",
+  "count": 2000,
+  "bootstrap_repetitions": 3000,
+  "bootstrap_seed": 2029,
+  "conditions": [
+    "clean",
+    "blur_r1",
+    "motion_horizontal_5",
+    "motion_vertical_5",
+    "motion_diag_down_5",
+    "motion_horizontal_7",
+    "motion_diag_down_7",
+    "motion_shallow_down_7"
+  ],
+  "rows": [
+    {
+      "condition": "clean",
+      "models": {
+        "original": {
+          "correct": 1766,
+          "total": 2000,
+          "accuracy": 0.883
+        },
+        "gaussian_trained": {
+          "correct": 1754,
+          "total": 2000,
+          "accuracy": 0.877
+        },
+        "motion_trained": {
+          "correct": 1737,
+          "total": 2000,
+          "accuracy": 0.8685
+        }
+      },
+      "motion_vs_gaussian_difference_percentage_points": -0.8500000000000001,
+      "motion_vs_gaussian_paired_bootstrap_95pct_ci_percentage_points": [
+        -2.0,
+        0.3
+      ],
+      "gained_images": 62,
+      "lost_images": 79
+    },
+    {
+      "condition": "blur_r1",
+      "models": {
+        "original": {
+          "correct": 656,
+          "total": 2000,
+          "accuracy": 0.328
+        },
+        "gaussian_trained": {
+          "correct": 1696,
+          "total": 2000,
+          "accuracy": 0.848
+        },
+        "motion_trained": {
+          "correct": 1680,
+          "total": 2000,
+          "accuracy": 0.84
+        }
+      },
+      "motion_vs_gaussian_difference_percentage_points": -0.8,
+      "motion_vs_gaussian_paired_bootstrap_95pct_ci_percentage_points": [
+        -1.95,
+        0.4
+      ],
+      "gained_images": 65,
+      "lost_images": 81
+    },
+    {
+      "condition": "motion_horizontal_5",
+      "models": {
+        "original": {
+          "correct": 1037,
+          "total": 2000,
+          "accuracy": 0.5185
+        },
+        "gaussian_trained": {
+          "correct": 1228,
+          "total": 2000,
+          "accuracy": 0.614
+        },
+        "motion_trained": {
+          "correct": 1592,
+          "total": 2000,
+          "accuracy": 0.796
+        }
+      },
+      "motion_vs_gaussian_difference_percentage_points": 18.2,
+      "motion_vs_gaussian_paired_bootstrap_95pct_ci_percentage_points": [
+        16.1,
+        20.201250000000005
+      ],
+      "gained_images": 436,
+      "lost_images": 72
+    },
+    {
+      "condition": "motion_vertical_5",
+      "models": {
+        "original": {
+          "correct": 993,
+          "total": 2000,
+          "accuracy": 0.4965
+        },
+        "gaussian_trained": {
+          "correct": 1214,
+          "total": 2000,
+          "accuracy": 0.607
+        },
+        "motion_trained": {
+          "correct": 1603,
+          "total": 2000,
+          "accuracy": 0.8015
+        }
+      },
+      "motion_vs_gaussian_difference_percentage_points": 19.45,
+      "motion_vs_gaussian_paired_bootstrap_95pct_ci_percentage_points": [
+        17.5,
+        21.55
+      ],
+      "gained_images": 442,
+      "lost_images": 53
+    },
+    {
+      "condition": "motion_diag_down_5",
+      "models": {
+        "original": {
+          "correct": 594,
+          "total": 2000,
+          "accuracy": 0.297
+        },
+        "gaussian_trained": {
+          "correct": 672,
+          "total": 2000,
+          "accuracy": 0.336
+        },
+        "motion_trained": {
+          "correct": 1507,
+          "total": 2000,
+          "accuracy": 0.7535
+        }
+      },
+      "motion_vs_gaussian_difference_percentage_points": 41.75,
+      "motion_vs_gaussian_paired_bootstrap_95pct_ci_percentage_points": [
+        39.300000000000004,
+        44.2
+      ],
+      "gained_images": 915,
+      "lost_images": 80
+    },
+    {
+      "condition": "motion_horizontal_7",
+      "models": {
+        "original": {
+          "correct": 667,
+          "total": 2000,
+          "accuracy": 0.3335
+        },
+        "gaussian_trained": {
+          "correct": 893,
+          "total": 2000,
+          "accuracy": 0.4465
+        },
+        "motion_trained": {
+          "correct": 1416,
+          "total": 2000,
+          "accuracy": 0.708
+        }
+      },
+      "motion_vs_gaussian_difference_percentage_points": 26.150000000000002,
+      "motion_vs_gaussian_paired_bootstrap_95pct_ci_percentage_points": [
+        24.0,
+        28.4
+      ],
+      "gained_images": 599,
+      "lost_images": 76
+    },
+    {
+      "condition": "motion_diag_down_7",
+      "models": {
+        "original": {
+          "correct": 436,
+          "total": 2000,
+          "accuracy": 0.218
+        },
+        "gaussian_trained": {
+          "correct": 434,
+          "total": 2000,
+          "accuracy": 0.217
+        },
+        "motion_trained": {
+          "correct": 1293,
+          "total": 2000,
+          "accuracy": 0.6465
+        }
+      },
+      "motion_vs_gaussian_difference_percentage_points": 42.95,
+      "motion_vs_gaussian_paired_bootstrap_95pct_ci_percentage_points": [
+        40.448750000000004,
+        45.45
+      ],
+      "gained_images": 949,
+      "lost_images": 90
+    },
+    {
+      "condition": "motion_shallow_down_7",
+      "models": {
+        "original": {
+          "correct": 594,
+          "total": 2000,
+          "accuracy": 0.297
+        },
+        "gaussian_trained": {
+          "correct": 710,
+          "total": 2000,
+          "accuracy": 0.355
+        },
+        "motion_trained": {
+          "correct": 1429,
+          "total": 2000,
+          "accuracy": 0.7145
+        }
+      },
+      "motion_vs_gaussian_difference_percentage_points": 35.949999999999996,
+      "motion_vs_gaussian_paired_bootstrap_95pct_ci_percentage_points": [
+        33.650000000000006,
+        38.401250000000005
+      ],
+      "gained_images": 778,
+      "lost_images": 59
+    }
+  ]
+}

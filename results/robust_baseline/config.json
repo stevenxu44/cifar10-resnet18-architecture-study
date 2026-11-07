@@ -1,0 +1,25 @@
+{
+  "base_checkpoint": "results/baseline/best.pt",
+  "train_count": 45000,
+  "val_count": 5000,
+  "split_seed": 2026,
+  "seed": 2027,
+  "epochs": 20,
+  "batch_size": 128,
+  "optimizer": "SGD momentum=0.9 nesterov=True weight_decay=5e-4",
+  "initial_lr": 0.01,
+  "lr_schedule": "cosine to zero",
+  "blur_probability": 0.6,
+  "blur_radius_uniform": [
+    0.7,
+    1.3
+  ],
+  "brightness_probability": 0.2,
+  "brightness_factor_uniform": [
+    0.45,
+    1.0
+  ],
+  "selection": "max 0.3*val_clean+0.4*val_blur+0.3*val_combined with val_clean>=0.90",
+  "device": "cuda",
+  "torch": "2.8.0+cu128"
+}

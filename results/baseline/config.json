@@ -1,0 +1,14 @@
+{
+  "variant": "baseline",
+  "epochs": 80,
+  "batch_size": 128,
+  "lr": 0.1,
+  "seed": 42,
+  "split_seed": 2026,
+  "train_count": 45000,
+  "val_count": 5000,
+  "test_count": 10000,
+  "device": "cuda",
+  "torch": "2.8.0+cu128",
+  "warmup_epochs": 5
+}

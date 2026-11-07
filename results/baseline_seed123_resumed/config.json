@@ -1,0 +1,16 @@
+{
+  "variant": "baseline",
+  "seed": 123,
+  "target_epochs": 80,
+  "resume_from_epoch": 52,
+  "resume_from_best_val_accuracy": 0.9044,
+  "optimizer_reinitialized": true,
+  "original_epoch_53_discarded": true,
+  "batch_size": 128,
+  "split_seed": 2026,
+  "train_count": 45000,
+  "val_count": 5000,
+  "test_count": 10000,
+  "device": "cuda",
+  "torch": "2.8.0+cu128"
+}

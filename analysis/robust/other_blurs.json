@@ -1,0 +1,46 @@
+{
+  "dataset": "CIFAR-10.1 v6",
+  "conditions": {
+    "box_blur_r1": "Pillow BoxBlur radius=1",
+    "motion_blur_horizontal_5": "Pillow 5x5 horizontal mean kernel",
+    "gaussian_blur_r1p5": "Pillow GaussianBlur radius=1.5"
+  },
+  "results": {
+    "box_blur_r1": {
+      "baseline": {
+        "correct": 876,
+        "total": 2000,
+        "accuracy": 0.438
+      },
+      "blur_trained": {
+        "correct": 1664,
+        "total": 2000,
+        "accuracy": 0.832
+      }
+    },
+    "motion_blur_horizontal_5": {
+      "baseline": {
+        "correct": 1037,
+        "total": 2000,
+        "accuracy": 0.5185
+      },
+      "blur_trained": {
+        "correct": 1228,
+        "total": 2000,
+        "accuracy": 0.614
+      }
+    },
+    "gaussian_blur_r1p5": {
+      "baseline": {
+        "correct": 427,
+        "total": 2000,
+        "accuracy": 0.2135
+      },
+      "blur_trained": {
+        "correct": 1499,
+        "total": 2000,
+        "accuracy": 0.7495
+      }
+    }
+  }
+}

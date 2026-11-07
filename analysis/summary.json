@@ -1,0 +1,46 @@
+[
+  {
+    "variant": "baseline",
+    "test_accuracy": 0.9464,
+    "test_correct": 9464,
+    "test_total": 10000,
+    "parameters": 11173962,
+    "macs_per_image": 557889024,
+    "latency_ms_per_image": 2.7362479999965217,
+    "best_epoch": 79,
+    "best_val_accuracy": 0.9452
+  },
+  {
+    "variant": "depthwise",
+    "test_accuracy": 0.9327,
+    "test_correct": 9327,
+    "test_total": 10000,
+    "parameters": 1439626,
+    "macs_per_image": 75515392,
+    "latency_ms_per_image": 2.4209469999982502,
+    "best_epoch": 76,
+    "best_val_accuracy": 0.9334
+  },
+  {
+    "variant": "se",
+    "test_accuracy": 0.9446,
+    "test_correct": 9446,
+    "test_total": 10000,
+    "parameters": 11263042,
+    "macs_per_image": 558223744,
+    "latency_ms_per_image": 3.60033200000089,
+    "best_epoch": 75,
+    "best_val_accuracy": 0.951
+  },
+  {
+    "variant": "depthwise_se",
+    "test_accuracy": 0.9367,
+    "test_correct": 9367,
+    "test_total": 10000,
+    "parameters": 1528706,
+    "macs_per_image": 75850112,
+    "latency_ms_per_image": 3.3699670000009974,
+    "best_epoch": 79,
+    "best_val_accuracy": 0.9382
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "best_epoch": 19,
+  "validation": {
+    "clean": {
+      "correct": 4701,
+      "total": 5000,
+      "accuracy": 0.9402
+    },
+    "blur_r1": {
+      "correct": 4648,
+      "total": 5000,
+      "accuracy": 0.9296
+    },
+    "lowlight_0p45": {
+      "correct": 4665,
+      "total": 5000,
+      "accuracy": 0.933
+    },
+    "blur_r1_lowlight_0p45": {
+      "correct": 4614,
+      "total": 5000,
+      "accuracy": 0.9228
+    }
+  },
+  "cifar10_test": {
+    "clean": {
+      "correct": 9445,
+      "total": 10000,
+      "accuracy": 0.9445
+    },
+    "blur_r1": {
+      "correct": 9314,
+      "total": 10000,
+      "accuracy": 0.9314
+    },
+    "lowlight_0p45": {
+      "correct": 9372,
+      "total": 10000,
+      "accuracy": 0.9372
+    },
+    "blur_r1_lowlight_0p45": {
+      "correct": 9180,
+      "total": 10000,
+      "accuracy": 0.918
+    }
+  },
+  "cifar10_1_v6": {
+    "clean": {
+      "correct": 1754,
+      "total": 2000,
+      "accuracy": 0.877
+    },
+    "blur_r1": {
+      "correct": 1696,
+      "total": 2000,
+      "accuracy": 0.848
+    },
+    "lowlight_0p45": {
+      "correct": 1725,
+      "total": 2000,
+      "accuracy": 0.8625
+    },
+    "blur_r1_lowlight_0p45": {
+      "correct": 1659,
+      "total": 2000,
+      "accuracy": 0.8295
+    }
+  }
+}

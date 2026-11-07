@@ -1,0 +1,9 @@
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.pt binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.npy binary

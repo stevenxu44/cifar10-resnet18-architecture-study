@@ -1,0 +1,90 @@
+{
+  "best_epoch": 14,
+  "validation": {
+    "clean": {
+      "correct": 4702,
+      "total": 5000,
+      "accuracy": 0.9404
+    },
+    "blur_r1": {
+      "correct": 4627,
+      "total": 5000,
+      "accuracy": 0.9254
+    },
+    "blur_r1_lowlight_0p45": {
+      "correct": 4614,
+      "total": 5000,
+      "accuracy": 0.9228
+    },
+    "motion_horizontal_5": {
+      "correct": 4483,
+      "total": 5000,
+      "accuracy": 0.8966
+    },
+    "motion_vertical_5": {
+      "correct": 4509,
+      "total": 5000,
+      "accuracy": 0.9018
+    }
+  },
+  "cifar10_test": {
+    "clean": {
+      "correct": 9421,
+      "total": 10000,
+      "accuracy": 0.9421
+    },
+    "blur_r1": {
+      "correct": 9253,
+      "total": 10000,
+      "accuracy": 0.9253
+    }
+  },
+  "cifar10_1_v6": {
+    "clean": {
+      "correct": 1737,
+      "total": 2000,
+      "accuracy": 0.8685
+    },
+    "blur_r1": {
+      "correct": 1680,
+      "total": 2000,
+      "accuracy": 0.84
+    },
+    "lowlight_0p45": {
+      "correct": 1722,
+      "total": 2000,
+      "accuracy": 0.861
+    },
+    "blur_r1_lowlight_0p45": {
+      "correct": 1639,
+      "total": 2000,
+      "accuracy": 0.8195
+    },
+    "motion_horizontal_5": {
+      "correct": 1592,
+      "total": 2000,
+      "accuracy": 0.796
+    },
+    "motion_vertical_5": {
+      "correct": 1603,
+      "total": 2000,
+      "accuracy": 0.8015
+    },
+    "motion_diag_down_5": {
+      "correct": 1507,
+      "total": 2000,
+      "accuracy": 0.7535
+    },
+    "motion_horizontal_7": {
+      "correct": 1416,
+      "total": 2000,
+      "accuracy": 0.708
+    },
+    "motion_diag_down_7": {
+      "correct": 1293,
+      "total": 2000,
+      "accuracy": 0.6465
+    }
+  },
+  "reevaluation": "CIFAR-10.1 values verified from saved best.pt via analyze_motion.py"
+}

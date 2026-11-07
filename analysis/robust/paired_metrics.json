@@ -1,0 +1,76 @@
+{
+  "dataset": "CIFAR-10.1 v6",
+  "source": "https://github.com/modestyachts/CIFAR-10.1",
+  "bootstrap_repetitions": 3000,
+  "bootstrap_seed": 2027,
+  "rows": [
+    {
+      "condition": "clean",
+      "total": 2000,
+      "baseline_correct": 1766,
+      "robust_correct": 1754,
+      "baseline_accuracy": 0.883,
+      "robust_accuracy": 0.877,
+      "difference_percentage_points": -0.6,
+      "difference_95pct_paired_bootstrap_ci_percentage_points": [
+        -1.7999999999999998,
+        0.5
+      ],
+      "gained_images": 64,
+      "lost_images": 76,
+      "baseline_cat_predictions": 202,
+      "robust_cat_predictions": 203
+    },
+    {
+      "condition": "blur_r1",
+      "total": 2000,
+      "baseline_correct": 656,
+      "robust_correct": 1696,
+      "baseline_accuracy": 0.328,
+      "robust_accuracy": 0.848,
+      "difference_percentage_points": 52.0,
+      "difference_95pct_paired_bootstrap_ci_percentage_points": [
+        49.6,
+        54.400000000000006
+      ],
+      "gained_images": 1102,
+      "lost_images": 62,
+      "baseline_cat_predictions": 833,
+      "robust_cat_predictions": 209
+    },
+    {
+      "condition": "lowlight_0p45",
+      "total": 2000,
+      "baseline_correct": 1662,
+      "robust_correct": 1725,
+      "baseline_accuracy": 0.831,
+      "robust_accuracy": 0.8625,
+      "difference_percentage_points": 3.15,
+      "difference_95pct_paired_bootstrap_ci_percentage_points": [
+        1.7487500000000007,
+        4.55
+      ],
+      "gained_images": 138,
+      "lost_images": 75,
+      "baseline_cat_predictions": 314,
+      "robust_cat_predictions": 220
+    },
+    {
+      "condition": "blur_r1_lowlight_0p45",
+      "total": 2000,
+      "baseline_correct": 440,
+      "robust_correct": 1659,
+      "baseline_accuracy": 0.22,
+      "robust_accuracy": 0.8295,
+      "difference_percentage_points": 60.95,
+      "difference_95pct_paired_bootstrap_ci_percentage_points": [
+        58.550000000000004,
+        63.3
+      ],
+      "gained_images": 1277,
+      "lost_images": 58,
+      "baseline_cat_predictions": 1443,
+      "robust_cat_predictions": 204
+    }
+  ]
+}

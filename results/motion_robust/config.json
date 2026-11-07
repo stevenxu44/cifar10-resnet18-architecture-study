@@ -1,0 +1,36 @@
+{
+  "source_checkpoint": "results/robust_baseline/best.pt",
+  "seed": 2028,
+  "split_seed": 2026,
+  "train_count": 45000,
+  "val_count": 5000,
+  "epochs": 15,
+  "batch_size": 128,
+  "motion_probability": 0.35,
+  "motion_train_lengths": [
+    3,
+    5
+  ],
+  "motion_train_directions": [
+    "horizontal",
+    "vertical",
+    "diag_down",
+    "diag_up"
+  ],
+  "gaussian_probability": 0.35,
+  "gaussian_radius_uniform": [
+    0.7,
+    1.3
+  ],
+  "brightness_probability": 0.2,
+  "brightness_factor_uniform": [
+    0.45,
+    1.0
+  ],
+  "clean_probability_before_brightness": 0.3,
+  "optimizer": "SGD momentum=0.9 nesterov=True weight_decay=5e-4",
+  "initial_lr": 0.005,
+  "selection": "0.15 clean + 0.20 gaussian + 0.15 gaussian_lowlight + 0.25 horizontal5 + 0.25 vertical5; clean>=0.92, gaussian>=0.85",
+  "device": "cuda",
+  "torch": "2.8.0+cu128"
+}
